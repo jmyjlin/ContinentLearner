@@ -16,8 +16,7 @@ def isContinent(guess):
 # user keeps guessing until all 7 continents guessed
 while len(guessed) < 7:
   remaining = 7 - len(guessed)
-  user_guess = input(f"Enter a continent ({remaining}/7 remaining):
-").strip().title()
+  user_guess = input(f"Enter a continent ({remaining}/7 remaining): ").strip().title()
   result = isContinent(user_guess)
   attempts += 1
   # show user result of guess
